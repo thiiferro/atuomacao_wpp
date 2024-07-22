@@ -41,12 +41,13 @@ wppconnect
         client
           .sendText(message.from, 'Olá, como posso te ajudar?')
           .then((result) => {
-            console.log('Result: ', result); //return object success
+            console.log('Result: ', result);//return object success
+            primeiraMensagem = false;
           })
           .catch((erro) => {
             console.error('Error when sending: ', erro); //return object error
           });
-        primeiraMensagem = false;
+        
       }
   });
   }
