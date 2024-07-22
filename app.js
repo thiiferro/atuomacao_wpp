@@ -38,11 +38,11 @@ wppconnect
     client.onMessage((message) => {
       let primeiraMensagem = true;
       if (message.body.toLocalLowerCase != '' && primeiraMensagem === true) {
+        primeiraMensagem = false;
         client
           .sendText(message.from, 'Olá, como posso te ajudar?')
           .then((result) => {
             console.log('Result: ', result);//return object success
-            primeiraMensagem = false;
           })
           .catch((erro) => {
             console.error('Error when sending: ', erro); //return object error

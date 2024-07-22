@@ -1,5 +1,3 @@
-2024/07/10-21:15:24.111 13b0 Reusing MANIFEST c:\Users\Thiago\OneDrive\Documentos\teste_wpp\tokens\sessionName\Default\Local Storage\leveldb/MANIFEST-000001
-2024/07/10-21:15:24.115 13b0 Recovering log #7
-2024/07/10-21:15:24.115 13b0 Level-0 table #10: started
-2024/07/10-21:15:24.121 13b0 Level-0 table #10: 22035 bytes OK
-2024/07/10-21:15:24.130 13b0 Delete type=0 #7
+2024/07/22-17:17:12.849 2ba0 Reusing MANIFEST c:\Users\Thiago\OneDrive\Documentos\teste_wpp\tokens\sessionName\Default\Local Storage\leveldb/MANIFEST-000001
+2024/07/22-17:17:12.853 2ba0 Recovering log #11
+2024/07/22-17:17:12.857 2ba0 Reusing old log c:\Users\Thiago\OneDrive\Documentos\teste_wpp\tokens\sessionName\Default\Local Storage\leveldb/000011.log 
