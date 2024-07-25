@@ -37,17 +37,19 @@ wppconnect
   function start(client) {
     client.onMessage((message) => {
       let primeiraMensagem = true;
-      if (message.body.toLocalLowerCase != '' && primeiraMensagem === true) {
+      while (primeiraMensagem === true) {
         primeiraMensagem = false;
-        client
-          .sendText(message.from, 'Olá, como posso te ajudar?')
-          .then((result) => {
-            console.log('Result: ', result);//return object success
-          })
-          .catch((erro) => {
-            console.error('Error when sending: ', erro); //return object error
-          });
-        
+        if (message.body.toLocalLowerCase != '') {
+          client
+            .sendText(message.from, 'Olá, como posso te ajudar?')
+            .then((result) => {
+              console.log('Result: ', result);//return object success
+            })
+            .catch((erro) => {
+              console.error('Error when sending: ', erro); //return object error
+            });
+          
+        }
       }
   });
   }
